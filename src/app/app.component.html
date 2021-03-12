@@ -1,0 +1,10 @@
+<button (click) = "onClick()">Display!</button>
+<p *ngIf="showOrHide">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque odio, consectetur laudantium magnam corrupti expedita
+  quidem sit minima veniam? Ab quibusdam repudiandae est eum pariatur quis iure neque sapiente fugiat?
+</p>
+
+<p *ngFor="let x of log" [ngStyle]="{'background-color' : x > 4 ? 'green' : 'transparent', 'font-size' : '2rem'}"
+  [ngClass]="x > 4 ? 'special': ''">
+  {{x}}. Hello World
+</p>
